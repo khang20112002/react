@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import {Navbar, NavbarBrand} from 'reactstrap';
+import Welcome from './components/Welcome';
+import Car from './components/Car'
+import Menu from './components/MenuComponent'
+
+// import Account from './components/Count';
+// import Store from './components/Store';
 
 // import Hello from './Hello';
 // import Hello2 from './Hello2';
@@ -47,17 +53,57 @@ import {Navbar, NavbarBrand} from 'reactstrap';
 //   }
 
 
-class App extends React.Component{
-  render(){
+// const comment={
+//   date:new Date().toString(),
+//   text:'Hi',
+//   author:{
+//     name:'Hello',
+//     avatarUrl: './image/logo.png',
+//   }
+// }
+
+// class App extends React.Component{
+//   render(){
+//     return(
+//       <div className="App">
+//         <Navbar dark color="primary">
+//           <div className="container">
+//             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+//           </div>
+//         </Navbar>
+//         {/* <Count/> */}
+//         {/* <Store /> */}
+//       </div>
+//     )
+//   }
+// }
+
+// const comment = {
+//     date: new Date(),
+//     text:'I hope you enjoy my restaurant!',
+//     author:(
+//         name = 'alberto',
+//         avatarUrl = './images/logo.png'
+//     )
+// }
+
+function App(){
     return(
-      <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
-          </div>
-        </Navbar>
-      </div>
-    )
-  }
+        // <div>
+        // <Welcome name="Van" />
+        // <Welcome name="Thuy Kieu" />
+        // <Welcome name="Thuy Van" />
+        // </div>
+        // <Car/>
+        // <Comment date={comment.date} text={comment.text} author={comment.author} />
+        <div className='App'>
+            <Navbar dark color='primary'>
+                <div className='container'>
+                    <NavbarBrand href='/'>Ristorante Con Fusion</NavbarBrand>
+                </div>
+            </Navbar>
+        </div>
+    );
 }
+
 export default App;
