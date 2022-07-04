@@ -7,8 +7,7 @@ import Car from "./components/Car";
 // import Warning from "./components/Warning";
 import Welcome from "./components/Welcome";
 import { Form, Navbar, NavbarBrand } from "reactstrap";
-import MenuComponent from "./components/MenuComponent";
-import {DISHES} from "./components/dish";
+import { DISHES } from "./components/dish";
 import MainComponent from "./components/MainComponent";
 
 // import Account from './components/Count';
@@ -104,20 +103,20 @@ import MainComponent from "./components/MainComponent";
 
 class App extends React.Component{
     constructor(props){
-    super(props);
+        super(props);
     //   this.state={
     //     dishes: DISHES
     //   };
     }
 
     render() {
-    return(
+        return(
         // <MenuComponent dishes={DISHES}/>
         <div className="App">
         <MainComponent/>
         </div>
     )
-    }
+    } 
 }
 
 // function App(){
