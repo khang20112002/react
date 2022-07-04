@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-import {Navbar, NavbarBrand} from 'reactstrap';
-import Welcome from './components/Welcome';
-import Car from './components/Car'
-import Menu from './components/MenuComponent'
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import Comment from "./components/Comment";
+import Car from "./components/Car";
+// import Stock from "./components/Stock";
+// import Warning from "./components/Warning";
+import Welcome from "./components/Welcome";
+import { Form, Navbar, NavbarBrand } from "reactstrap";
+import MenuComponent from "./components/MenuComponent";
+import {DISHES} from "./components/dish";
+import MainComponent from "./components/MainComponent";
 
 // import Account from './components/Count';
 // import Store from './components/Store';
@@ -87,23 +92,52 @@ import Menu from './components/MenuComponent'
 //     )
 // }
 
-function App(){
+// class App extends Component{
+//     constructor(props){
+//         super(props);
+//         this.state = {
+//             dishes: DISHES
+//         };
+//     }
+    
+// }
+
+class App extends React.Component{
+    constructor(props){
+    super(props);
+    //   this.state={
+    //     dishes: DISHES
+    //   };
+    }
+
+    render() {
     return(
-        // <div>
-        // <Welcome name="Van" />
-        // <Welcome name="Thuy Kieu" />
-        // <Welcome name="Thuy Van" />
-        // </div>
-        // <Car/>
-        // <Comment date={comment.date} text={comment.text} author={comment.author} />
-        <div className='App'>
-            <Navbar dark color='primary'>
-                <div className='container'>
-                    <NavbarBrand href='/'>Ristorante Con Fusion</NavbarBrand>
-                </div>
-            </Navbar>
+        // <MenuComponent dishes={DISHES}/>
+        <div className="App">
+        <MainComponent/>
         </div>
-    );
+    )
+    }
 }
+
+// function App(){
+//     return(
+//         // <div>
+//         // <Welcome name="Van" />
+//         // <Welcome name="Thuy Kieu" />
+//         // <Welcome name="Thuy Van" />
+//         // </div>
+//         // <Car/>
+//         // <Comment date={comment.date} text={comment.text} author={comment.author} />
+//         <div className='App'>
+//             <Navbar dark color='primary'>
+//                 <div className='container'>
+//                     <NavbarBrand href='/'>Ristorante Con Fusion</NavbarBrand>
+//                 </div>
+//             </Navbar>
+//             <Menu dishes = {this.state.dishes} />
+//         </div>
+//     );
+// }
 
 export default App;
