@@ -1,5 +1,5 @@
 import React from "react";
-import DishdetailComponent from "./DishdetailComponent";
+import Dishdetail from "./DishdetailComponent";
 import {
     Card,
     CardImg,
@@ -25,7 +25,7 @@ class MenuComponent extends React.Component {
     render() {
     const menu = this.props.dishes.map((dish) => {
         return (
-        <div className="col-12 col-md-5 m-1">
+        <div className="col-12 col-md-5 mt-1">
             <Card key={dish.id}
             onClick={() => this.props.onClick(dish.id)}>
             <CardImg width="100%" src={dish.image} alt={dish.name}></CardImg>

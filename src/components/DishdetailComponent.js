@@ -7,7 +7,7 @@ import {
   CardBody,
   CardTitle,
 } from "reactstrap";
-export default class DishdetailComponent extends Component {
+export default class Dishdetail extends Component {
   constructor(props) {
     super(props);
   }
